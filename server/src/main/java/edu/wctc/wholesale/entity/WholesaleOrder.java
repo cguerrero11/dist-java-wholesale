@@ -22,9 +22,11 @@ public class WholesaleOrder {
     @Column(name = "terms")
     private String terms;
     @NotNull
+//    @ManyToOne
     @JoinColumn(name = "customer_id")
     private int customerId;
     @NotNull
+//    @ManyToOne
     @JoinColumn(name = "product_id")
     private int productId;
     @NotNull

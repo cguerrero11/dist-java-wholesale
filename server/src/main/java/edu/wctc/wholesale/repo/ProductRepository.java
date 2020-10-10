@@ -1,4 +1,8 @@
 package edu.wctc.wholesale.repo;
 
-public class ProductRepository {
+import edu.wctc.wholesale.entity.Product;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ProductRepository extends CrudRepository <Product, Integer> {
+
 }
